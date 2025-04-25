@@ -10,7 +10,7 @@ Projet de création d’un **portail web complet** pour une entreprise, comprena
 
 ## 🎯 Objectifs
 
-- Définir une **identité graphique numérique**
+- Définir une **identité graphique numérique** pour le site
 - Développer un site vitrine pour améliorer la visibilité
 - Créer un intranet sécurisé pour les collaborateurs
 
