@@ -1,0 +1,212 @@
+[
+  {
+    "prenom": "Test",
+    "nom": "test",
+    "fonction": "Administratrice systèmes",
+    "photo": "test",
+    "bio": "Test",
+    "role": "admin",
+    "login": "test",
+    "motdepasse": "$2y$10$I5NiG16kvvHfXwtbzkTrUuE8ZZcdZ8qFBOcVQ2b4t.UX6pUznzhVq"
+  },
+  {
+    "prenom": "Emma",
+    "nom": "Lemoine",
+    "fonction": "Administratrice systèmes",
+    "photo": "img/utilisateurs/p1.jpg",
+    "bio": "Spécialisée en infrastructures réseau et serveurs.",
+    "role": "admin",
+    "login": "emma.lemoine",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Lucas",
+    "nom": "Morel",
+    "fonction": "Technicien support",
+    "photo": "img/utilisateurs/p2.jpg",
+    "bio": "Assure le bon fonctionnement quotidien du matériel.",
+    "role": "salariés",
+    "login": "lucas.morel",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Chloé",
+    "nom": "Fontaine",
+    "fonction": "Responsable design graphique",
+    "photo": "img/utilisateurs/p3.jpg",
+    "bio": "Supervise la charte graphique de l'entreprise.",
+    "role": "managers",
+    "login": "chloe.fontaine",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Nathan",
+    "nom": "Garnier",
+    "fonction": "Directeur de projets numériques",
+    "photo": "img/utilisateurs/p4.jpg",
+    "bio": "Coordonne les grandes lignes stratégiques IT.",
+    "role": "direction",
+    "login": "nathan.garnier",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Léa",
+    "nom": "Benoit",
+    "fonction": "Stagiaire RH",
+    "photo": "img/utilisateurs/p5.jpg",
+    "bio": "Découvre les processus de gestion humaine.",
+    "role": "perso",
+    "login": "lea.benoit",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Thomas",
+    "nom": "Guérin",
+    "fonction": "Responsable infrastructure",
+    "photo": "img/utilisateurs/p6.jpg",
+    "bio": "Gère le réseau, les serveurs et leur sécurité.",
+    "role": "admin",
+    "login": "thomas.guerin",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Camille",
+    "nom": "Roy",
+    "fonction": "Développeuse front-end",
+    "photo": "img/utilisateurs/p7.jpg",
+    "bio": "Développe des interfaces utilisateurs performantes.",
+    "role": "salariés",
+    "login": "camille.roy",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Alexandre",
+    "nom": "Roux",
+    "fonction": "Chef de produit technique",
+    "photo": "img/utilisateurs/p8.jpg",
+    "bio": "Fait le lien entre développement et stratégie produit.",
+    "role": "managers",
+    "login": "alexandre.roux",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Juliette",
+    "nom": "Perrin",
+    "fonction": "Directrice UX",
+    "photo": "img/utilisateurs/p9.jpg",
+    "bio": "Responsable de l'expérience utilisateur globale.",
+    "role": "direction",
+    "login": "juliette.perrin",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Hugo",
+    "nom": "Marchand",
+    "fonction": "Assistant DevOps",
+    "photo": "img/utilisateurs/p10.jpg",
+    "bio": "En appui sur les déploiements et les tests CI/CD.",
+    "role": "perso",
+    "login": "hugo.marchand",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Sarah",
+    "nom": "Lemoine",
+    "fonction": "Responsable sécurité informatique",
+    "photo": "img/utilisateurs/p11.jpg",
+    "bio": "Garantit la cybersécurité des systèmes.",
+    "role": "admin",
+    "login": "sarah.lemoine",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Jules",
+    "nom": "Renaud",
+    "fonction": "Comptable",
+    "photo": "img/utilisateurs/p12.jpg",
+    "bio": "Gère les opérations comptables et les bilans.",
+    "role": "salariés",
+    "login": "jules.renaud",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Laura",
+    "nom": "Boyer",
+    "fonction": "Responsable administrative",
+    "photo": "img/utilisateurs/p13.jpg",
+    "bio": "Pilote l’organisation interne de l’entreprise.",
+    "role": "managers",
+    "login": "laura.boyer",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Mathis",
+    "nom": "Chevalier",
+    "fonction": "Responsable cybersécurité",
+    "photo": "img/utilisateurs/p14.jpg",
+    "bio": "Supervise les audits et tests de sécurité.",
+    "role": "direction",
+    "login": "mathis.chevalier",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Clara",
+    "nom": "Masson",
+    "fonction": "Développeuse fullstack",
+    "photo": "img/utilisateurs/p15.jpg",
+    "bio": "Gère le développement complet des applications.",
+    "role": "salariés",
+    "login": "clara.masson",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Antoine",
+    "nom": "Barbier",
+    "fonction": "Administrateur réseau",
+    "photo": "img/utilisateurs/p16.jpg",
+    "bio": "Configure et supervise les réseaux internes.",
+    "role": "admin",
+    "login": "antoine.barbier",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Léna",
+    "nom": "Noël",
+    "fonction": "Ingénieure cybersécurité",
+    "photo": "img/utilisateurs/p17.jpg",
+    "bio": "Analyse et sécurise les systèmes critiques.",
+    "role": "salariés",
+    "login": "lena.noel",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Noah",
+    "nom": "Weber",
+    "fonction": "Stagiaire développement",
+    "photo": "img/utilisateurs/p18.jpg",
+    "bio": "Étudiant en BUT R&T, en appui sur les développements.",
+    "role": "perso",
+    "login": "noah.weber",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Sophie",
+    "nom": "Girard",
+    "fonction": "Directrice des opérations",
+    "photo": "img/utilisateurs/p19.jpg",
+    "bio": "Pilote les projets à fort impact stratégique.",
+    "role": "direction",
+    "login": "sophie.girard",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  },
+  {
+    "prenom": "Maxime",
+    "nom": "Collet",
+    "fonction": "Consultant externe",
+    "photo": "img/utilisateurs/p20.jpg",
+    "bio": "Participe ponctuellement aux projets digitaux.",
+    "role": "perso",
+    "login": "maxime.collet",
+    "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj/Y.UGQdTdFqUrh4abqUKjf0A/Bdd5aYPu2"
+  }
+]
