@@ -2,25 +2,25 @@
     {
       "nom": "Le Comptoir",
       "ville": "Saint-Malo",
-      "logo": "img/partenaires/lecomptoir.png",
+      "logo": "img/partenaires/comptoir.jpg",
       "description": "Bar convivial situé en plein cœur de Saint-Malo, partenaire de nos événements d’entreprise et afterworks."
     },
     {
       "nom": "Le Chill",
       "ville": "Saint-Malo",
-      "logo": "img/partenaires/lechill.png",
+      "logo": "img/partenaires/lechill.jpg",
       "description": "Bar cosy et moderne, parfait pour nos rencontres informelles avec les clients et partenaires techniques."
     },
     {
       "nom": "Casino Saint-Malo",
       "ville": "Saint-Malo",
-      "logo": "img/partenaires/casino.png",
+      "logo": "img/partenaires/casino.jpg",
       "description": "Le Casino Barrière de Saint-Malo, situé en bord de mer face à la plage du Sillon, est un établissement historique de la ville. Il allie charme Belle Époque et ambiance contemporaine."
     },
     {
       "nom": "Union Sportive Saint Malo",
       "ville": "Saint-Malo",
-      "logo": "img/partenaires/ussm.png",
+      "logo": "img/partenaires/ussm.jpg",
       "description": "Club de football emblématique de la ville, l'Union Sportive Saint Malo soutient notre projet avec des échanges sur des événements sportifs."
     },
     {

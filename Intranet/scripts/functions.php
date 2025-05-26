@@ -15,10 +15,10 @@ function entete() {
     echo "<h1><strong>Intranet Goelandale</strong></h1>";
 
     if (isset($_SESSION['user'])) {
-        echo "<p>Bonjour, ".htmlspecialchars($_SESSION['user']['login'])." | <strong>Rôle: ".$_SESSION['user']['role']."</strong></p>";
+        echo "<p>Bonjour, <strong>".htmlspecialchars($_SESSION['user']['prenom'])." ".htmlspecialchars($_SESSION['user']['nom'])."</strong> | Rôle: <strong>".$_SESSION['user']['role']."</strong></p>";
 
-        if (!empty($_SESSION['user']['image']) && file_exists($_SESSION['user']['image'])) {
-            echo "<img src='/SAE-203/Intranet/" . $_SESSION['user']['image'] . "' alt='Photo de profil' class='rounded-circle' height='50'>";
+        if (!empty($_SESSION['user']['photo']) && file_exists($_SESSION['user']['photo'])) {
+            echo "<img src='/SAE-203/Intranet/" . $_SESSION['user']['photo'] . "' alt='Photo de profil' class='rounded-circle' height='50'>";
         } else {
             echo "<img src='/SAE-203/Intranet/img/goelandale.png' alt='Image par default' class='rounded-circle' height='50'>";
         }
@@ -115,7 +115,7 @@ function pieddepage() {
 }
 
 $liste_users = json_decode(file_get_contents(__DIR__ . '/../data/utilisateurs.json'), true);
-
+$liste_partenaires = json_decode(file_get_contents(__DIR__ . '/../data/partenaires.json'), true);
 $nb_users = count($liste_users);
 
 ?>

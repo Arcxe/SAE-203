@@ -6,77 +6,76 @@ require 'scripts/functions.php';
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php parametres("Wiki & Fonctionnalités - Intranet"); ?>
+    <?php parametres("Wiki - Intranet"); ?>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
     <?php entete(); ?>
     <?php navigation(); ?>
 
-    <main class="container mt-5">
-        <h1 class="mb-4"><strong>Wiki & Fonctionnalités</strong></h1>
-        <p class="lead">Découvrez les principales fonctionnalités utilisées pour faire fonctionner BlaBla Voiture.</p>
+    <main class="container mt-4">
+        <div class="bg-light p-4 rounded shadow-sm">
+            <h1 class="mb-4"><strong>🌐 SAÉ 203 – Portail Web</strong></h1>
+            <p><strong>R&T Saint-Malo – Mars 2025</strong></p>
 
-        <section class="mb-5">
-            <h3><strong>Ce qui fonctionne sur le site</strong></h3>
-            <p>Le site est entièrement fonctionnel et propose les services suivants :</p>
-            <ul class="list-group">
-                <li class="list-group-item">Inscription et connexion des utilisateurs avec gestion des rôles.</li>
-                <li class="list-group-item">Création, affichage et modification des annonces de covoiturage.</li>
-                <li class="list-group-item">Inscription des utilisateurs aux annonces, avec mise à jour des places restantes.</li>
-                <li class="list-group-item">Affichage des trajets et filtrage selon les critères de recherche.</li>
-                <li class="list-group-item">Gestion des sessions et redirections sécurisées.</li>
-                <li class="list-group-item">Stockage des données en JSON et manipulation efficace avec PHP.</li>
-            </ul>
-            <p class="mt-3"><strong>Ce qui n'a pas été utilisé :</strong> <br>
-            <span class="text-danger">Le site ne fait pas appel à Fetch API</span>. Toutes les interactions se font via des requêtes PHP sans AJAX ou JavaScript.</p>
-        </section>
+            <hr>
 
-        <section class="mb-5">
-            <h3><strong>Outils et fonctions utilisés</strong></h3>
-            <p>Notre plateforme repose sur différentes fonctionnalités de PHP pour assurer la gestion des utilisateurs et des annonces :</p>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Sessions :</strong> <code>session_start()</code> permet de conserver l’état d’un utilisateur connecté.</li>
-                <li class="list-group-item"><strong>Vérifications :</strong> <code>isset()</code> est utilisé pour s’assurer de l’existence des variables.</li>
-                <li class="list-group-item"><strong>Sécurité :</strong> Nous chiffrons les mots de passe avec <code>password_hash()</code> et les validons avec <code>password_verify()</code>.</li>
-                <li class="list-group-item"><strong>Stockage des données :</strong> Les annonces et utilisateurs sont enregistrés au format JSON grâce à <code>json_encode()</code> et <code>json_decode()</code>.</li>
-                <li class="list-group-item"><strong>Lecture & écriture :</strong> <code>file_get_contents()</code> et <code>file_put_contents()</code> permettent de mettre à jour les fichiers de données.</li>
-                <li class="list-group-item"><strong>Filtrage des annonces :</strong> <code>array_filter()</code> est utilisé pour afficher les covoiturages selon les critères de recherche.</li>
-                <li class="list-group-item"><strong>Navigation :</strong> <code>header()</code> est employé pour rediriger les utilisateurs après certaines actions.</li>
-            </ul>
-        </section>
-
-        <section class="mb-5">
-            <h3><strong>Comptes de test</strong></h3>
-            <p>Voici des comptes disponibles pour essayer les fonctionnalités du site :</p>
-            <table class="table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Utilisateur</th>
-                        <th>Mot de passe</th>
-                        <th>Rôle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>test</code></td>
-                        <td><code>test</code></td>
-                        <td>Compte Test</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="text-muted">Les mots de passe sont stockés de façon sécurisée, mais ces identifiants peuvent être utilisés pour tester.</p>
-        </section>
-
-        <section>
-            <h3><strong>Ressources pour aller plus loin</strong></h3>
-            <p>Si vous souhaitez en savoir plus sur les technologies utilisées :</p>
+            <h3>📘 Contexte</h3>
+            <p>Projet de création d’un <strong>portail web complet</strong> pour une entreprise, comprenant :</p>
             <ul>
-                <li><a href="https://www.php.net/manual/fr/" target="_blank">Documentation PHP</a></li>
-                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap – Design Responsive</a></li>
-                <li><a href="https://www.w3schools.com/bootstrap/" target="_blank">W3Schools – Apprendre Bootstrap</a></li>
+                <li>Un <strong>site vitrine</strong> (WordPress)</li>
+                <li>Un <strong>intranet</strong> (PHP + Bootstrap)</li>
             </ul>
-            <br>
-        </section>
+
+            <h3>🎯 Objectifs</h3>
+            <ul>
+                <li>Définir une <strong>identité graphique numérique</strong> pour le site</li>
+                <li>Développer un site vitrine pour améliorer la visibilité</li>
+                <li>Créer un intranet sécurisé pour les collaborateurs</li>
+            </ul>
+
+            <h3>🛠️ Fonctionnalités principales</h3>
+
+            <h5 class="mt-3">🔹 Site vitrine (WordPress)</h5>
+            <ul>
+                <li>Présentation de l’entreprise, ses activités, son histoire</li>
+                <li>Mise en avant des partenaires</li>
+                <li>Charte graphique personnalisée</li>
+            </ul>
+
+            <h5>🔹 Intranet (PHP / Bootstrap)</h5>
+            <ul>
+                <li>Portail de connexion sécurisé</li>
+                <li>Gestion des utilisateurs & groupes (<code>admin</code>, <code>salariés</code>, etc.)</li>
+                <li>Partage de fichiers <code>.txt</code> / <code>.csv</code></li>
+                <li>Annuaire interne + partenaires + clients</li>
+                <li>Wiki interne (aide + identifiants de test)</li>
+            </ul>
+
+            <h3>🧱 Stack technique</h3>
+            <ul>
+                <li>Apache 2.4</li>
+                <li>PHP 7.4+</li>
+                <li>HTML / CSS / Bootstrap 5</li>
+                <li>JavaScript / JSON</li>
+                <li>WordPress (vitrine)</li>
+                <li><strong>Sans base de données</strong> (pas de MySQL)</li>
+            </ul>
+
+            <h3>📂 Organisation</h3>
+            <ul>
+                <li><code>/wordpress</code> → site vitrine</li>
+                <li><code>/intranet</code> → espace interne</li>
+            </ul>
+
+            <hr>
+
+            <h3>🔐 Identifiants de test</h3>
+            <p>Vous pouvez utiliser ces identifiants pour vous connecter à l’intranet :</p>
+            <ul>
+                <li><strong>test / test</strong></li>
+            </ul>
+        </div>
     </main>
 
     <?php pieddepage(); ?>
