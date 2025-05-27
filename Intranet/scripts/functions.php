@@ -117,5 +117,6 @@ function pieddepage() {
 $liste_users = json_decode(file_get_contents(__DIR__ . '/../data/utilisateurs.json'), true);
 $liste_partenaires = json_decode(file_get_contents(__DIR__ . '/../data/partenaires.json'), true);
 $nb_users = count($liste_users);
+$liste_clients = json_decode(file_get_contents(__DIR__ . '/../data/clients.json'), true);
 
 ?>
