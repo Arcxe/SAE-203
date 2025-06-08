@@ -16,6 +16,13 @@ require 'scripts/functions.php';
         <div class="jumbotron bg-light p-4">
             <h1><strong>Nos employés</strong></h1>
             <br>
+            <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+                <div class="mb-3">
+                    <a href="ajouter_utilisateur.php" class="btn btn-primary">Ajouter un utilisateur</a>
+                </div>
+            <?php endif; ?>
+
+            <br>
 
             <div class="row">
                 <?php 
@@ -37,11 +44,21 @@ require 'scripts/functions.php';
                                 echo "<img src='$photoPath' alt='Photo de {$i['prenom']}' class='rounded-circle mb-3' style='width: 80px; height: 80px; object-fit: cover;'>";
                             echo "</div>";
 
-                            echo "<div class='card-body'>";
-                                echo "<p><strong> Fonction :</strong> {$i['fonction']}</p>";
-                                echo "<p><strong> Role :</strong> {$i['role']}</p>";
-                                echo "<p><strong>💬 Bio :</strong> {$i['bio']}</p>";
-                            echo "</div>";
+                           echo "<div class='card-body'>";
+                            echo "<p><strong> Fonction :</strong> {$i['fonction']}</p>";
+                            echo "<p><strong> Role :</strong> {$i['role']}</p>";
+                            echo "<p><strong>💬 Bio :</strong> {$i['bio']}</p>";
+
+                            if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin') {
+                                echo "<a href='modifier_utilisateur.php?id=" . $i['id'] . "' class='btn btn-primary'>Modifier</a>";
+                                echo "<br>";
+                                echo "<br>";
+                                echo "<a href='supprimer_utilisateurs.php?id=" . $i['id'] . "' class='btn btn-danger'>Supprimer</a>";
+                                
+                            }
+
+                        echo "</div>";
+
                         echo "</div>";
                     echo "</div>";
                 }

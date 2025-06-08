@@ -52,7 +52,7 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
 
-    } elseif (isset($_SESSION['user']['role']) && $_SESSION['user']['role'] === 'salariés') {
+    } elseif (isset($_SESSION['user']['role']) && $_SESSION['user']['role'] === 'salaries') {
         echo "<nav class='navbar navbar-expand-lg navbar-dark bg-dark'>";
         echo "<div class='container-fluid'>";
         echo "<a class='navbar-brand' href='/SAE-203/Intranet/accueil.php'>Accueil</a>";

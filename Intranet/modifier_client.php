@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php entete(); ?>
 <?php navigation(); ?>
 
-<main class="container mt-5">
+<main class="container mt-5 mb-5">
     <h1>Modifier le client</h1>
     <form method="post" class="mt-4">
         <div class="mb-3">

@@ -13,14 +13,15 @@ require 'scripts/functions.php'; // contient $liste_clients
 <?php entete(); ?>
 <?php navigation(); ?>
 
-<main class="container mt-5">
+<main class="container mt-5 mb-5">
     <h1><strong>Liste des Clients</strong></h1>  
-    <p><strong>Voici tous nos clients enregistrés</strong></p>
-
-    <div class="mb-3">
-        <a href="ajouter_client.php" class="btn btn-primary">+ Ajouter un client</a>
-    </div>
-
+    <br>
+    <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+        <div class="mb-3">
+            <a href="ajouter_client.php" class="btn btn-primary">Ajouter un client</a>
+        </div>
+    <?php endif; ?>
+    <br>
     <table class="table table-striped table-bordered align-middle">
         <thead class="table-primary text-center">
             <tr>
@@ -29,7 +30,10 @@ require 'scripts/functions.php'; // contient $liste_clients
                 <th>Adresse</th>
                 <th>Email</th>
                 <th>Téléphone</th>
-                <th>Actions</th>
+                <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+                    <th>Actions</th>
+                <?php endif; ?>    
+                
                 <th>Téléchargement</th>
             </tr>
         </thead>
@@ -45,10 +49,12 @@ require 'scripts/functions.php'; // contient $liste_clients
                     </td>
                     <td><?= htmlspecialchars($client['email']) ?></td>
                     <td><?= htmlspecialchars($client['telephone']) ?></td>
-                    <td class="text-center">
-                        <a href="modifier_client.php?id=<?= urlencode($client['id']) ?>" class="btn btn-primary btn-sm">Modifier</a>
-                        <a href="supprimer_client.php?id=<?= urlencode($client['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Supprimer ce client ?');">Supprimer</a>
-                    </td>
+                    <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+                        <td class="text-center">
+                            <a href="modifier_client.php?id=<?= urlencode($client['id']) ?>" class="btn btn-primary btn-sm">Modifier</a>
+                            <a href="supprimer_client.php?id=<?= urlencode($client['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Supprimer ce client ?');">Supprimer</a>
+                        </td>
+                    <?php endif; ?>
                     <td>
                         <a href="telecharger_fiche.php?id=<?= urlencode($client['id']) ?>" class="btn btn-sm btn-primary" target="_blank">Télécharger PDF</a>
                     </td>
