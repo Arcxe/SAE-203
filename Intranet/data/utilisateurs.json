@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "prenom": "Test",
         "nom": "test",
         "fonction": "Administratrice syst\u00e8mes",
@@ -10,6 +11,7 @@
         "motdepasse": "$2y$10$I5NiG16kvvHfXwtbzkTrUuE8ZZcdZ8qFBOcVQ2b4t.UX6pUznzhVq"
     },
     {
+        "id": 2,
         "prenom": "Emma",
         "nom": "Lemoine",
         "fonction": "Administratrice syst\u00e8mes",
@@ -20,16 +22,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 3,
         "prenom": "Lucas",
         "nom": "Morel",
         "fonction": "Technicien support",
         "photo": "img\/utilisateurs\/lucas.morel.png",
         "bio": "Assure le bon fonctionnement quotidien du mat\u00e9riel.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "lucas.morel",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 4,
         "prenom": "Chlo\u00e9",
         "nom": "Fontaine",
         "fonction": "Responsable design graphique",
@@ -40,6 +44,7 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 5,
         "prenom": "Nathan",
         "nom": "Garnier",
         "fonction": "Directeur de projets num\u00e9riques",
@@ -50,16 +55,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 6,
         "prenom": "L\u00e9a",
         "nom": "Benoit",
         "fonction": "Stagiaire RH",
         "photo": "img\/utilisateurs\/lea.benoit.png",
         "bio": "D\u00e9couvre les processus de gestion humaine.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "lea.benoit",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 7,
         "prenom": "Thomas",
         "nom": "Gu\u00e9rin",
         "fonction": "Responsable infrastructure",
@@ -70,16 +77,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 8,
         "prenom": "Camille",
         "nom": "Roy",
         "fonction": "D\u00e9veloppeuse front-end",
         "photo": "img\/utilisateurs\/camille.roy.png",
         "bio": "D\u00e9veloppe des interfaces utilisateurs performantes.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "camille.roy",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 9,
         "prenom": "Alexandre",
         "nom": "Roux",
         "fonction": "Chef de produit technique",
@@ -90,6 +99,7 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 10,
         "prenom": "Juliette",
         "nom": "Perrin",
         "fonction": "Directrice UX",
@@ -100,16 +110,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 11,
         "prenom": "Hugo",
         "nom": "Marchand",
         "fonction": "Assistant DevOps",
         "photo": "img\/utilisateurs\/hugo.marchand.png",
         "bio": "En appui sur les d\u00e9ploiements et les tests CI\/CD.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "hugo.marchand",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 12,
         "prenom": "Sarah",
         "nom": "Lemoine",
         "fonction": "Responsable s\u00e9curit\u00e9 informatique",
@@ -120,16 +132,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 13,
         "prenom": "Jules",
         "nom": "Renaud",
         "fonction": "Comptable",
         "photo": "img\/utilisateurs\/jules.renaud.png",
         "bio": "G\u00e8re les op\u00e9rations comptables et les bilans.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "jules.renaud",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 14,
         "prenom": "Laura",
         "nom": "Boyer",
         "fonction": "Responsable administrative",
@@ -140,6 +154,7 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 15,
         "prenom": "Mathis",
         "nom": "Chevalier",
         "fonction": "Responsable cybers\u00e9curit\u00e9",
@@ -150,16 +165,18 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 16,
         "prenom": "Clara",
         "nom": "Masson",
         "fonction": "D\u00e9veloppeuse fullstack",
         "photo": "img\/utilisateurs\/clara.masson.png",
         "bio": "G\u00e8re le d\u00e9veloppement complet des applications.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "clara.masson",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 17,
         "prenom": "Antoine",
         "nom": "Barbier",
         "fonction": "Administrateur r\u00e9seau",
@@ -170,26 +187,29 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 18,
         "prenom": "L\u00e9na",
         "nom": "No\u00ebl",
         "fonction": "Ing\u00e9nieure cybers\u00e9curit\u00e9",
         "photo": "img\/utilisateurs\/lena.noel.png",
         "bio": "Analyse et s\u00e9curise les syst\u00e8mes critiques.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "lena.noel",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 19,
         "prenom": "Noah",
         "nom": "Weber",
         "fonction": "Stagiaire d\u00e9veloppement",
         "photo": "img\/utilisateurs\/noah.weber.png",
         "bio": "\u00c9tudiant en BUT R&T, en appui sur les d\u00e9veloppements.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "noah.weber",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 20,
         "prenom": "Sophie",
         "nom": "Girard",
         "fonction": "Directrice des op\u00e9rations",
@@ -200,30 +220,14 @@
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
     },
     {
+        "id": 21,
         "prenom": "Maxime",
         "nom": "Collet",
         "fonction": "Consultant externe",
         "photo": "img\/utilisateurs\/maxime.collet.png",
         "bio": "Participe ponctuellement aux projets digitaux.",
-        "role": "salari\u00e9s",
+        "role": "salaries",
         "login": "maxime.collet",
         "motdepasse": "$2y$10$K0f83pDeQWmOi1ttKZj\/Y.UGQdTdFqUrh4abqUKjf0A\/Bdd5aYPu2"
-    },
-    {
-        "id": "683f14275f7ff",
-        "prenom": "aa",
-        "nom": "aa",
-        "adresse": "aa",
-        "email": "aaa@aaa.fr",
-        "telephone": "0000",
-        "image": "img\/utilisateurs\/aa.aa.png"
-    },
-    {
-        "id": "683f15099278f",
-        "prenom": "aa",
-        "nom": "aa",
-        "adresse": "aa",
-        "email": "aaa@aaa.fr",
-        "telephone": "00"
     }
 ]
