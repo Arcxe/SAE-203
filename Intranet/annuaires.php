@@ -16,6 +16,9 @@ require 'scripts/functions.php';
         <div class="jumbotron bg-light p-4">
             <h1><strong>Nos employés</strong></h1>
             <br>
+            <div class="mb-3">
+                <a href="ajouter_utilisateur.php" class="btn btn-primary">+ Ajouter un utilisateur</a>
+            </div>
 
             <div class="row">
                 <?php 

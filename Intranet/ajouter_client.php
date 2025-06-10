@@ -3,7 +3,7 @@ session_start();
 require 'scripts/functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $clients = json_decode(file_get_contents(__DIR__ . '/../data/clients.json'), true);
+    $clients = json_decode(file_get_contents(__DIR__ . '/data/clients.json'), true);
 
     $nouveau_client = [
         'id' => uniqid(),
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ];
 
     $clients[] = $nouveau_client;
-    file_put_contents(__DIR__ . '/../data/clients.json', json_encode($clients, JSON_PRETTY_PRINT));
+    file_put_contents(__DIR__ . '/data/clients.json', json_encode($clients, JSON_PRETTY_PRINT));
 
     header('Location: clients.php');
     exit;

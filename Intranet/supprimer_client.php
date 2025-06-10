@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$clients_file = __DIR__ . '/../data/clients.json';
+$clients_file = __DIR__ . '/data/clients.json';
 $clients = json_decode(file_get_contents($clients_file), true);
 
 $id = $_GET['id'] ?? null;

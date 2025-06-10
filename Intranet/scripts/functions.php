@@ -114,6 +114,18 @@ function pieddepage() {
     echo "</footer>";
 }
 
+function getClientById($id) {
+    global $liste_clients;
+
+    foreach ($liste_clients as $client) {
+        if ($client['id'] == $id) {
+            return $client;
+        }
+    }
+    return false;
+}
+
+
 $liste_users = json_decode(file_get_contents(__DIR__ . '/../data/utilisateurs.json'), true);
 $liste_partenaires = json_decode(file_get_contents(__DIR__ . '/../data/partenaires.json'), true);
 $nb_users = count($liste_users);
