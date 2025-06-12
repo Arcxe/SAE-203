@@ -49,6 +49,7 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('annuaires.php')."' href='/SAE-203/Intranet/annuaires.php'>Notre équipe</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('clients.php')."' href='/SAE-203/Intranet/clients.php'>Nos clients</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('partenaires.php')."' href='/SAE-203/Intranet/partenaires.php'>Nos partenaires</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('monprofil.php')."' href='/SAE-203/Intranet/monprofil.php'>Mon profil</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
 

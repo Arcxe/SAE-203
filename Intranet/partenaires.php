@@ -15,6 +15,11 @@ require 'scripts/functions.php';
 
     <main class="container mt-4 mb-5">
         <h1 class="mb-4"><strong>Nos Partenaires</strong></h1>
+        <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+                <div class="mb-3">
+                    <a href="ajouter_partenaire.php" class="btn btn-primary">Ajouter un partenaire</a>
+                </div>
+            <?php endif; ?>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php foreach ($liste_partenaires as $partenaire): ?>
                 <div class="col">
@@ -28,8 +33,17 @@ require 'scripts/functions.php';
                                 </h5>
                                 <p class="card-text"><?= htmlspecialchars($partenaire['description']) ?></p>
                             </div>
+                             <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+                                <div class="card-footer bg-transparent border-top-0 mt-auto text-end">
+                                    <a href="supprimer_partenaire.php?id=<?= $partenaire['id'] ?>" class="btn btn-danger btn-sm">
+                                        Supprimer
+                                    </a>
+                                </div>
+                            <?php endif; ?>
                         </div>
+                        
                     </a>
+                     
                 </div>
             <?php endforeach; ?>
         </div>
