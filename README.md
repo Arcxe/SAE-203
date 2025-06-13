@@ -7,7 +7,7 @@ Projet de création d’un **portail web complet** pour une entreprise, comprena
 
 - Un **site vitrine** (WordPress)
 - Un **intranet** (PHP + Bootstrap)
-
+  
 ## 🎯 Objectifs
 
 - Définir une **identité graphique numérique** pour le site
