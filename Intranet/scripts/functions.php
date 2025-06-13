@@ -49,6 +49,7 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('annuaires.php')."' href='/SAE-203/Intranet/annuaires.php'>Notre équipe</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('clients.php')."' href='/SAE-203/Intranet/clients.php'>Nos clients</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('partenaires.php')."' href='/SAE-203/Intranet/partenaires.php'>Nos partenaires</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('gestionnaire.php')."' href='/SAE-203/Intranet/gestionnaire.php'>Gestionnaire</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('monprofil.php')."' href='/SAE-203/Intranet/monprofil.php'>Mon profil</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
@@ -64,6 +65,8 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('annuaires.php')."' href='/SAE-203/Intranet/annuaires.php'>Notre équipe</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('clients.php')."' href='/SAE-203/Intranet/clients.php'>Nos clients</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('partenaires.php')."' href='/SAE-203/Intranet/partenaires.php'>Nos partenaires</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('gestionnaire.php')."' href='/SAE-203/Intranet/gestionnaire.php'>Gestionnaire</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('monprofil.php')."' href='/SAE-203/Intranet/monprofil.php'>Mon profil</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
 
@@ -78,6 +81,8 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('annuaires.php')."' href='/SAE-203/Intranet/annuaires.php'>Notre équipe</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('clients.php')."' href='/SAE-203/Intranet/clients.php'>Nos clients</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('partenaires.php')."' href='/SAE-203/Intranet/partenaires.php'>Nos partenaires</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('gestionnaire.php')."' href='/SAE-203/Intranet/gestionnaire.php'>Gestionnaire</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('monprofil.php')."' href='/SAE-203/Intranet/monprofil.php'>Mon profil</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
 
@@ -92,6 +97,8 @@ function navigation() {
         echo "<li class='nav-item'><a class='nav-link ".isActive('annuaires.php')."' href='/SAE-203/Intranet/annuaires.php'>Notre équipe</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('clients.php')."' href='/SAE-203/Intranet/clients.php'>Nos clients</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('partenaires.php')."' href='/SAE-203/Intranet/partenaires.php'>Nos partenaires</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('gestionnaire.php')."' href='/SAE-203/Intranet/gestionnaire.php'>Gestionnaire</a></li>";
+        echo "<li class='nav-item'><a class='nav-link ".isActive('monprofil.php')."' href='/SAE-203/Intranet/monprofil.php'>Mon profil</a></li>";
         echo "<li class='nav-item'><a class='nav-link ".isActive('wiki.php')."' href='/SAE-203/Intranet/wiki.php'>Wiki</a></li>";
         echo "</ul></div></div></nav>";
 
@@ -131,5 +138,20 @@ $liste_users = json_decode(file_get_contents(__DIR__ . '/../data/utilisateurs.js
 $liste_partenaires = json_decode(file_get_contents(__DIR__ . '/../data/partenaires.json'), true);
 $nb_users = count($liste_users);
 $liste_clients = json_decode(file_get_contents(__DIR__ . '/../data/clients.json'), true);
+
+
+function creerDossierPartage($login) {
+    // On s'assure que le dossier "utilisateurs" existe
+    $baseDir = DIR . '/../ftp-root/utilisateurs/';
+    if (!file_exists($baseDir)) {
+        mkdir($baseDir, 0775, true);
+    }
+
+    $userDir = $baseDir . $login;
+    // On ne crée que le dossier de l'utilisateur, les sous-dossiers sont optionnels
+    if (!file_exists($userDir)) {
+        mkdir($userDir, 0775, true);
+    }
+}
 
 ?>
